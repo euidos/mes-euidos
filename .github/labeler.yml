@@ -1,55 +1,55 @@
 accounts:
-- erpnext/accounts/*
-- erpnext/controllers/accounts_controller.py
-- erpnext/controllers/taxes_and_totals.py
+- mes_euidos/accounts/*
+- mes_euidos/controllers/accounts_controller.py
+- mes_euidos/controllers/taxes_and_totals.py
 
 stock:
-- erpnext/stock/*
-- erpnext/controllers/stock_controller.py
-- erpnext/controllers/item_variant.py
+- mes_euidos/stock/*
+- mes_euidos/controllers/stock_controller.py
+- mes_euidos/controllers/item_variant.py
 
 assets:
-- erpnext/assets/*
+- mes_euidos/assets/*
 
 regional:
-- erpnext/regional/*
+- mes_euidos/regional/*
 
 selling:
-- erpnext/selling/*
-- erpnext/controllers/selling_controller.py
+- mes_euidos/selling/*
+- mes_euidos/controllers/selling_controller.py
 
 buying:
-- erpnext/buying/*
-- erpnext/controllers/buying_controller.py
+- mes_euidos/buying/*
+- mes_euidos/controllers/buying_controller.py
 
 support:
-- erpnext/support/*
+- mes_euidos/support/*
 
 POS:
 - pos*
 
 ecommerce:
-- erpnext/e_commerce/*
+- mes_euidos/e_commerce/*
 
 maintenance:
-- erpnext/maintenance/*
+- mes_euidos/maintenance/*
 
 manufacturing:
-- erpnext/manufacturing/*
+- mes_euidos/manufacturing/*
 
 crm:
-- erpnext/crm/*
+- mes_euidos/crm/*
 
 HR:
-- erpnext/hr/*
+- mes_euidos/hr/*
 
 payroll:
-- erpnext/payroll*
+- mes_euidos/payroll*
 
 projects:
-- erpnext/projects/*
+- mes_euidos/projects/*
 
 # Any python files modifed but no test files modified
 needs-tests:
-- any: ['erpnext/**/*.py']
-  all: ['!erpnext/**/test*.py']
+- any: ['mes_euidos/**/*.py']
+  all: ['!mes_euidos/**/test*.py']

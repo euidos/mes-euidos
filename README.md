@@ -1,7 +1,7 @@
 
 <div align="center">
-    <a href="https://frappe.io/erpnext">
-	<img src="./erpnext/public/images/v16/erpnext.svg" alt="ERPNext Logo" height="80px" width="80xp"/>
+    <a href="https://frappe.io/mes_euidos">
+	<img src="./mes_euidos/public/images/v16/mes_euidos.svg" alt="ERPNext Logo" height="80px" width="80xp"/>
     </a>
     <h2>ERPNext</h2>
     <p align="center">
@@ -15,15 +15,15 @@
 </div>
 
 <div align="center">
-	<img src="./erpnext/public/images/v16/hero_image.png"/>
+	<img src="./mes_euidos/public/images/v16/hero_image.png"/>
 </div>
 
 <div align="center">
 	<a href="https://erpnext-demo.frappe.cloud/api/method/erpnext_demo.erpnext_demo.auth.login_demo">Live Demo</a>
 	-
-	<a href="https://frappe.io/erpnext">Website</a>
+	<a href="https://frappe.io/mes_euidos">Website</a>
 	-
-	<a href="https://docs.frappe.io/erpnext/">Documentation</a>
+	<a href="https://docs.frappe.io/mes_euidos/">Documentation</a>
 </div>
 
 ## ERPNext
@@ -116,7 +116,7 @@ To setup the repository locally follow the steps mentioned below:
 2. In a separate terminal window, run the following commands:
    ```
    # Create a new site
-   bench new-site erpnext.localhost
+   bench new-site mes_euidos.localhost
    ```
 
 3. Get the ERPNext app and install it
@@ -125,16 +125,16 @@ To setup the repository locally follow the steps mentioned below:
    bench get-app https://github.com/frappe/erpnext
 
    # Install the app
-   bench --site erpnext.localhost install-app erpnext
+   bench --site mes_euidos.localhost install-app mes_euidos
    ```
 
-4. Open the URL `http://erpnext.localhost:8000/app` in your browser, you should see the app running
+4. Open the URL `http://mes_euidos.localhost:8000/app` in your browser, you should see the app running
 
 ## Learning and community
 
 1. [Frappe School](https://school.frappe.io) - Learn Frappe Framework and ERPNext from the various courses by the maintainers or from the community.
 2. [Official documentation](https://docs.erpnext.com/) - Extensive documentation for ERPNext.
-3. [Discussion Forum](https://discuss.frappe.io/c/erpnext/6) - Engage with community of ERPNext users and service providers.
+3. [Discussion Forum](https://discuss.frappe.io/c/mes_euidos/6) - Engage with community of ERPNext users and service providers.
 4. [Telegram Group](https://erpnext_public.t.me) - Get instant help from huge community of users.
 
 
