@@ -1,5 +1,5 @@
 [project]
-name = "erpnext"
+name = "mes_euidos"
 authors = [
     { name = "Frappe Technologies Pvt Ltd", email = "developers@frappe.io"}
 ]
@@ -38,7 +38,7 @@ build-backend = "flit_core.buildapi"
 [tool.frappe.testing.function_type_validation]
 max_module_depth = 1
 skip_namespaces = [
-    "erpnext.deprecation_dumpster",
+    "mes_euidos.deprecation_dumpster",
 ]
 
 [tool.bench.frappe-dependencies]
@@ -46,8 +46,8 @@ frappe = ">=16.21.0,<17.0.0"
 
 [tool.bench.assets]
 build_dir = "./banking"
-out_dir = "../erpnext/public/banking"
-index_html_path = "../erpnext/www/banking.html"
+out_dir = "../mes_euidos/public/banking"
+index_html_path = "../mes_euidos/www/banking.html"
 
 [tool.ruff]
 line-length = 110
@@ -88,7 +88,7 @@ docstring-code-format = true
 
 
 [project.urls]
-Homepage = "https://frappe.io/erpnext"
+Homepage = "https://frappe.io/mes_euidos"
 Repository = "https://github.com/frappe/erpnext.git"
-Documentation = "https://docs.frappe.io/erpnext"
+Documentation = "https://docs.frappe.io/mes_euidos"
 "Bug Reports" = "https://github.com/frappe/erpnext/issues"

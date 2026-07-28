@@ -8,7 +8,7 @@ repos:
     rev: v4.3.0
     hooks:
       - id: trailing-whitespace
-        files: "erpnext.*"
+        files: "mes_euidos.*"
         exclude: ".*json$|.*txt$|.*csv|.*md"
       - id: check-yaml
       - id: no-commit-to-branch
@@ -28,11 +28,11 @@ repos:
         # Ignore any files that might contain jinja / bundles
         exclude: |
             (?x)^(
-                erpnext/public/dist/.*|
+                mes_euidos/public/dist/.*|
                 cypress/.*|
                 .*node_modules.*|
                 .*boilerplate.*|
-                erpnext/templates/includes/.*
+                mes_euidos/templates/includes/.*
             )$
 
   - repo: https://github.com/pre-commit/mirrors-eslint
@@ -44,12 +44,12 @@ repos:
         # Ignore any files that might contain jinja / bundles
         exclude: |
             (?x)^(
-                erpnext/public/dist/.*|
+                mes_euidos/public/dist/.*|
                 cypress/.*|
                 .*node_modules.*|
                 .*boilerplate.*|
-                erpnext/templates/pages/order.js|
-                erpnext/templates/includes/.*
+                mes_euidos/templates/pages/order.js|
+                mes_euidos/templates/includes/.*
             )$
 
   - repo: https://github.com/astral-sh/ruff-pre-commit

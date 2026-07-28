@@ -1,11 +1,11 @@
 {
-  "name": "erpnext",
+  "name": "mes_euidos",
   "description": "Open Source ERP System powered by the Frappe Framework",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/frappe/erpnext.git"
   },
-  "homepage": "https://frappe.io/erpnext",
+  "homepage": "https://frappe.io/mes_euidos",
   "author": "Frappe Technologies Pvt. Ltd.",
   "license": "GPL-3.0",
   "bugs": {

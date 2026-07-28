@@ -12,8 +12,8 @@ from pathlib import Path
 
 from babel.messages.pofile import read_po, write_po
 
-DEVELOP = Path("/tmp/develop-po/erpnext/locale/")
-LOCALE  = Path("./apps/erpnext/erpnext/locale/")
+DEVELOP = Path("/tmp/develop-po/mes_euidos/locale/")
+LOCALE  = Path("./apps/mes_euidos/mes_euidos/locale/")
 
 added = updated = 0
 
