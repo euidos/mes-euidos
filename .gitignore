@@ -23,3 +23,5 @@ node_modules/
 # Banking SPA
 erpnext/public/banking
 erpnext/www/banking.html
+# derived graphs are never committed — built on demand (euidos-graph)
+graphify-out/

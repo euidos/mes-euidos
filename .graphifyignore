@@ -1,0 +1,13 @@
+# non-code noise (euidos-graph init-repo)
+dev/
+.claude/
+.mcp.json
+pyproject.toml
+package.json
+package-lock.json
+uv.lock
+*.lock
+.github/
+docs/
+graphify-out/
+atlas/

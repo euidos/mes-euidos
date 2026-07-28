@@ -1,0 +1,35 @@
+{
+ "hooks": {
+  "UserPromptSubmit": [
+   {
+    "hooks": [
+     {
+      "type": "command",
+      "command": "euidos-graph run-status working || true"
+     }
+    ]
+   }
+  ],
+  "Stop": [
+   {
+    "hooks": [
+     {
+      "type": "command",
+      "command": "euidos-graph run-status idle || true"
+     }
+    ]
+   }
+  ],
+  "PostToolUse": [
+   {
+    "hooks": [
+     {
+      "type": "command",
+      "command": "euidos-graph touched --stdin || true"
+     }
+    ],
+    "matcher": "Edit|Write|MultiEdit|NotebookEdit"
+   }
+  ]
+ }
+}
