@@ -89,8 +89,11 @@ database import nor an MO compilation step. Because `mes_euidos` loads after
 
 Keep MES-owned translations in `mes_euidos/locale/ko.po` synchronized with the
 CSV. A compiled `mes_euidos.mo` is loaded after the app's CSV and must never
-reintroduce an older translation. Frappe-owned strings remain in the CSV
-overlay only. Automated checks enforce equality wherever CSV and PO overlap.
+reintroduce an older translation. Frappe-owned strings normally remain in the
+CSV overlay. The sole exception is an exact literal `\n` runtime key: Frappe's
+CSV loader unconditionally converts it to an actual newline, so an explicitly
+reviewed PO fallback must retain that otherwise unrepresentable key. Automated
+checks enforce equality wherever CSV and PO overlap.
 
 ## Quality gates
 

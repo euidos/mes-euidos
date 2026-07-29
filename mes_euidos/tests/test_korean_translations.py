@@ -11,6 +11,7 @@ from babel.messages.pofile import read_po
 KOREAN_CATALOG = Path(__file__).parents[1] / "translations" / "ko.csv"
 KOREAN_CONTEXT_OVERRIDES = Path(__file__).parents[1] / "translations" / "ko.context-overrides.json"
 KOREAN_SOURCE = Path(__file__).parents[1] / "translations" / "ko.source.jsonl"
+KOREAN_POT = Path(__file__).parents[1] / "locale" / "main.pot"
 KOREAN_PO = Path(__file__).parents[1] / "locale" / "ko.po"
 KOREAN_ENGLISH_ALLOWLIST = Path(__file__).parents[1] / "translations" / "ko.english-allowlist.json"
 QUALITY_VALIDATOR = Path(__file__).parents[1] / "translation_quality.py"
@@ -39,9 +40,11 @@ def test_korean_source_inventory_is_versioned_with_the_catalog():
 	assert KOREAN_SOURCE.is_file(), f"missing source inventory: {KOREAN_SOURCE}"
 	inventory = [json.loads(line) for line in KOREAN_SOURCE.read_text(encoding="utf-8").splitlines()]
 
-	assert len(inventory) == 15_266
-	assert len({row["source"] for row in inventory}) == 15_256
-	assert all(row["apps"] and row["locations"] for row in inventory)
+	assert len(inventory) == 16_512
+	assert len({row["source"] for row in inventory}) == 16_354
+	assert all(
+		row["apps"] and row["locations"] and row["extraction_methods"] for row in inventory
+	)
 
 
 def test_korean_unchanged_english_allowlist_is_versioned():
@@ -129,6 +132,7 @@ def test_korean_runtime_catalog_uses_canonical_erp_terms():
 			"Journal Entry",
 			"Landed Cost Voucher",
 			"Maintenance",
+			"Operation",
 			"Payment Entry",
 			"Pick List",
 			"Purchase Invoice",
@@ -141,6 +145,7 @@ def test_korean_runtime_catalog_uses_canonical_erp_terms():
 			"Sales Order",
 			"Serial and Batch Bundle",
 			"Stock Entry",
+			"WIP Work Orders",
 			"Work Order",
 		)
 	} == {
@@ -155,6 +160,7 @@ def test_korean_runtime_catalog_uses_canonical_erp_terms():
 		"Journal Entry": "분개전표",
 		"Landed Cost Voucher": "매입부대비용전표",
 		"Maintenance": "설비보전",
+		"Operation": "작업",
 		"Payment Entry": "입출금전표",
 		"Pick List": "피킹리스트",
 		"Purchase Invoice": "매입전표",
@@ -167,8 +173,58 @@ def test_korean_runtime_catalog_uses_canonical_erp_terms():
 		"Sales Order": "수주서",
 		"Serial and Batch Bundle": "일련번호·로트 묶음",
 		"Stock Entry": "재고수불전표",
+		"WIP Work Orders": "진행 중 작업지시서",
 		"Work Order": "작업지시서",
 	}
+
+
+def test_korean_runtime_catalog_covers_reported_static_and_existing_gaps():
+	"""Keep static Workspace, CRM, and administrator labels in the reviewed overlay."""
+	with KOREAN_CATALOG.open(encoding="utf-8", newline="") as catalog_file:
+		translations = {
+			(row[0], row[2] if len(row) == 3 else ""): row[1]
+			for row in csv.reader(catalog_file)
+			if len(row) in (2, 3)
+		}
+
+	expected = {
+		("Appointment", ""): "예약",
+		("Total Warehouses", ""): "총 창고 수",
+		("Stock Value by Item Group", ""): "품목군별 재고금액",
+		("Desktop", ""): "데스크톱",
+		("Permission Manager", ""): "권한 관리자",
+		("Login Activity", ""): "로그인 활동",
+		("System Users", ""): "시스템 사용자",
+		("Website Users", ""): "웹사이트 사용자",
+		("Failed Login Attempts", ""): "로그인 실패 횟수",
+		("Supplier Addresses And Contacts", ""): "공급처 주소 및 담당자",
+		("Campaign Naming By", ""): "캠페인명 부여 기준",
+		("Enable Opportunity Creation from Contact Us", ""): "문의하기 양식의 영업기회 생성 활성화",
+		("Allow Lead Duplication based on Emails", ""): "이메일 기준 잠재고객 중복 허용",
+		("Close Replied Opportunity After Days", ""): "답변한 영업기회 종료 대기일수",
+		(
+			"Auto close Opportunity Replied after the no. of days mentioned above",
+			"",
+		): "위에서 지정한 일수가 지나면 답변한 영업기회를 자동으로 종료합니다.",
+		("Default Quotation Validity Days", ""): "기본 견적서 유효일수",
+		(
+			"All the Comments and Emails will be copied from one document to another "
+			"newly created document(Lead -> Opportunity -> Quotation) throughout the "
+			"CRM documents.",
+			"",
+		): (
+			"CRM 문서 전반에서 한 문서의 모든 댓글과 이메일을 새로 생성한 문서"
+			"(잠재고객 → 영업기회 → 견적서)로 복사합니다."
+		),
+		(
+			"Update the modified timestamp on new communications received in Lead & "
+			"Opportunity.",
+			"",
+		): "잠재고객 및 영업기회에 새 커뮤니케이션이 수신되면 수정일시를 갱신합니다.",
+		("Enable Frappe CRM Data Synchronization", ""): "Frappe CRM 데이터 동기화 활성화",
+	}
+
+	assert {key: translations.get(key) for key in expected} == expected
 
 
 def test_korean_runtime_catalog_uses_gettext_context_for_ui_actions():
@@ -270,6 +326,30 @@ def test_korean_csv_and_po_agree_where_catalogs_overlap():
 	assert not fuzzy, f"{len(fuzzy)} reviewed PO translations remain fuzzy"
 
 
+def test_korean_po_covers_every_current_mes_source():
+	"""Keep the compiled MES catalog synchronized with every current POT message."""
+	with KOREAN_POT.open("rb") as pot_file:
+		pot_catalog = read_po(pot_file)
+	with KOREAN_PO.open("rb") as po_file:
+		po_catalog = read_po(po_file)
+
+	pot_keys = {
+		(message.id, message.context or "")
+		for message in pot_catalog
+		if message.id and isinstance(message.id, str)
+	}
+	po_translations = {
+		(message.id, message.context or ""): message.string
+		for message in po_catalog
+		if message.id and isinstance(message.id, str)
+	}
+	missing = pot_keys - set(po_translations)
+	untranslated = {key for key in pot_keys if not po_translations.get(key)}
+
+	assert not missing, f"{len(missing)} current MES POT messages are absent from ko.po"
+	assert not untranslated, f"{len(untranslated)} current MES POT messages are untranslated"
+
+
 def test_korean_po_covers_literal_newline_extractor_variants():
 	"""Keep Bench from reporting JavaScript escaped-newline variants as missing."""
 	with KOREAN_PO.open("rb") as po_file:
@@ -294,6 +374,13 @@ def test_korean_po_covers_literal_newline_extractor_variants():
 			"수주서 또는 자재요청서 중 품목을 불러올 문서를 선택하세요. 현재는 "
 			"<b>수주서</b>를 선택하세요.\\n 생산품목을 직접 선택하여 생산계획을 "
 			"수동으로 생성할 수도 있습니다."
+		),
+		(
+			"For comparison, use >5, <10 or =324.\\n"
+			"For ranges, use 5:10 (for values between 5 & 10)."
+		): (
+			"비교에는 >5, <10 또는 =324를 사용해 주세요.\\n"
+			"범위에는 5:10(5와 10 사이 값)을 사용해 주세요."
 		),
 	}
 
