@@ -1,0 +1,1502 @@
+[
+  {
+    "source": " BOM",
+    "context": "",
+    "translation": " BOM",
+    "reason": "BOM은 보호된 ERP/MES 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "&lt;head&gt; HTML",
+    "context": "",
+    "translation": "&lt;head&gt; HTML",
+    "reason": "&lt;head&gt;와 HTML은 웹 문서의 코드 태그 및 표준 기술 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "),I=t.anchor=_(",
+    "context": "",
+    "translation": "),I=t.anchor=_(",
+    "reason": "번호 부여 규칙, 코드 조각 또는 동적 플레이스홀더이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "1 = True & 0 = False",
+    "context": "",
+    "translation": "1 = True & 0 = False",
+    "reason": "불리언 값 표기식이므로 True/False와 숫자 표현을 원문 그대로 유지했습니다."
+  },
+  {
+    "source": "<div class=\"text-muted text-center\">{0}</div>",
+    "context": "",
+    "translation": "<div class=\"text-muted text-center\">{0}</div>",
+    "reason": "표시용 HTML과 런타임 자리표시자만 포함된 비언어 문자열이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "<div id=\"stock-levels-placeholder\"></div>",
+    "context": "",
+    "translation": "<div id=\"stock-levels-placeholder\"></div>",
+    "reason": "화면에서 동적으로 채우는 HTML 자리표시자이므로 태그와 ID를 원문 그대로 유지했습니다."
+  },
+  {
+    "source": "<div id=\\\"item-prices-container\\\"></div>",
+    "context": "",
+    "translation": "<div id=\\\"item-prices-container\\\"></div>",
+    "reason": "화면에서 동적으로 채우는 HTML 컨테이너이므로 이스케이프 문자, 태그 및 ID를 원문 그대로 유지했습니다."
+  },
+  {
+    "source": "<li>{}</li>",
+    "context": "",
+    "translation": "<li>{}</li>",
+    "reason": "동적으로 생성되는 목록 항목의 HTML 래퍼이므로 태그와 플레이스홀더를 그대로 유지했습니다."
+  },
+  {
+    "source": "<p><strong>{{ __(\"Condition Examples\") }}:</strong></p>\n<pre><code class=\"language-python\">doc.status==\"Open\"<br>doc.due_date==nowdate()<br>doc.total &gt; 40000\n</code></pre>\n",
+    "context": "",
+    "translation": "<p><strong>{{ __(\"Condition Examples\") }}:</strong></p>\n<pre><code class=\"language-python\">doc.status==\"Open\"<br>doc.due_date==nowdate()<br>doc.total &gt; 40000\n</code></pre>\n",
+    "reason": "Jinja 번역 함수 호출과 Python 예제 코드로 구성된 템플릿이므로 실행 구문을 원문 그대로 유지했습니다."
+  },
+  {
+    "source": "<p><strong>{{ __(\"Condition Examples\") }}:</strong></p>\n<pre>doc.status==\"Open\"<br>doc.due_date==nowdate()<br>doc.total &gt; 40000\n</pre>",
+    "context": "",
+    "translation": "<p><strong>{{ __(\"Condition Examples\") }}:</strong></p>\n<pre>doc.status==\"Open\"<br>doc.due_date==nowdate()<br>doc.total &gt; 40000\n</pre>",
+    "reason": "Jinja 번역 함수 호출과 Python 예제 코드로 구성된 템플릿이므로 실행 구문을 원문 그대로 유지했습니다."
+  },
+  {
+    "source": "AB+",
+    "context": "",
+    "translation": "AB+",
+    "reason": "혈액형 코드이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "AB-",
+    "context": "",
+    "translation": "AB-",
+    "reason": "혈액형 코드이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-ADS-.YYYY.-",
+    "context": "",
+    "translation": "ACC-ADS-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-AML-.YYYY.-",
+    "context": "",
+    "translation": "ACC-AML-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-ASA-.YYYY.-",
+    "context": "",
+    "translation": "ACC-ASA-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-ASC-.YYYY.-",
+    "context": "",
+    "translation": "ACC-ASC-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-ASR-.YYYY.-",
+    "context": "",
+    "translation": "ACC-ASR-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-ASS-.YYYY.-",
+    "context": "",
+    "translation": "ACC-ASS-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-BTN-.YYYY.-",
+    "context": "",
+    "translation": "ACC-BTN-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-JV-.YYYY.-",
+    "context": "",
+    "translation": "ACC-JV-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-PAY-.YYYY.-",
+    "context": "",
+    "translation": "ACC-PAY-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-PINV-.YYYY.-",
+    "context": "",
+    "translation": "ACC-PINV-.YYYY.-",
+    "reason": "Frappe 번호 부여 규칙 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-PINV-RET-.YYYY.-",
+    "context": "",
+    "translation": "ACC-PINV-RET-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-PRQ-.YYYY.-",
+    "context": "",
+    "translation": "ACC-PRQ-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-PSINV-.YYYY.-",
+    "context": "",
+    "translation": "ACC-PSINV-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-SH-.YYYY.-",
+    "context": "",
+    "translation": "ACC-SH-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-SINV-.YYYY.-",
+    "context": "",
+    "translation": "ACC-SINV-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ACC-SINV-RET-.YYYY.-",
+    "context": "",
+    "translation": "ACC-SINV-RET-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "API",
+    "context": "",
+    "translation": "API",
+    "reason": "API는 보호된 기술 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ASC",
+    "context": "",
+    "translation": "ASC",
+    "reason": "ASC는 데이터베이스 정렬 방향 키워드이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Active Directory",
+    "context": "",
+    "translation": "Active Directory",
+    "reason": "디렉터리 서비스 고유 제품명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Ar",
+    "context": "Number system",
+    "translation": "Ar",
+    "reason": "Ar는 인도식 큰 수 단위(arab)의 표준 축약이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Arial",
+    "context": "",
+    "translation": "Arial",
+    "reason": "Arial은 글꼴 고유명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "BFS",
+    "context": "",
+    "translation": "BFS",
+    "reason": "그래프 탐색 알고리즘 식별자이므로 원문 약어를 유지했습니다."
+  },
+  {
+    "source": "BOM",
+    "context": "",
+    "translation": "BOM",
+    "reason": "BOM은 제조 문서의 표준 약어이므로 원문 표기를 유지했습니다."
+  },
+  {
+    "source": "BOM 1",
+    "context": "",
+    "translation": "BOM 1",
+    "reason": "BOM 번호 표기이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "BOM 2",
+    "context": "",
+    "translation": "BOM 2",
+    "reason": "BOM 번호 표기이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "BOM ID",
+    "context": "",
+    "translation": "BOM ID",
+    "reason": "BOM ID는 시스템 식별자 명칭이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "BUDGET-.########",
+    "context": "",
+    "translation": "BUDGET-.########",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Bill of Materials",
+    "context": "",
+    "translation": "BOM",
+    "reason": "Bill of Materials는 사용자 지시와 제조 UI 표준 용어에 따라 보호 약어 BOM으로 번역했습니다."
+  },
+  {
+    "source": "CBAL-.#####",
+    "context": "",
+    "translation": "CBAL-.#####",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "CMD",
+    "context": "",
+    "translation": "CMD",
+    "reason": "CMD는 명령 실행 유형 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "CODE-39",
+    "context": "",
+    "translation": "CODE-39",
+    "reason": "CODE-39는 바코드 규격의 고유 명칭이므로 원문을 그대로 유지했습니다."
+  },
+  {
+    "source": "CSS",
+    "context": "",
+    "translation": "CSS",
+    "reason": "CSS는 표준 웹 기술 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "CSV",
+    "context": "",
+    "translation": "CSV",
+    "reason": "CSV는 보호된 파일 형식 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "CUST-.YYYY.-",
+    "context": "",
+    "translation": "CUST-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Comm10E",
+    "context": "",
+    "translation": "Comm10E",
+    "reason": "Comm10E는 국제 봉투 용지 규격명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Cr",
+    "context": "Number system",
+    "translation": "Cr",
+    "reason": "Cr는 인도식 큰 수 단위(crore)의 표준 축약이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Cron",
+    "context": "",
+    "translation": "Cron",
+    "reason": "Cron은 작업 스케줄 표현식의 표준 기술 용어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "DELAY",
+    "context": "",
+    "translation": "DELAY",
+    "reason": "이메일 전송 상태 알림의 시스템 옵션 값이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "DELETE",
+    "context": "",
+    "translation": "DELETE",
+    "reason": "HTTP 메서드 이름이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "DESC",
+    "context": "",
+    "translation": "DESC",
+    "reason": "DESC는 데이터베이스 정렬 방향 키워드이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "DFS",
+    "context": "",
+    "translation": "DFS",
+    "reason": "그래프 탐색 알고리즘 식별자이므로 원문 약어를 유지했습니다."
+  },
+  {
+    "source": "DLE",
+    "context": "",
+    "translation": "DLE",
+    "reason": "DLE는 국제 봉투 용지 규격명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "DT-",
+    "context": "",
+    "translation": "DT-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "DUNN-.MM.-.YY.-",
+    "context": "",
+    "translation": "DUNN-.MM.-.YY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "DocField",
+    "context": "",
+    "translation": "DocField",
+    "reason": "DocField는 Frappe 프레임워크 필드 메타데이터 용어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "DocPerm",
+    "context": "",
+    "translation": "DocPerm",
+    "reason": "DocPerm은 Frappe 권한 DocType의 고유 이름이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "DocShare",
+    "context": "",
+    "translation": "DocShare",
+    "reason": "DocShare는 Frappe 공유 권한 DocType의 고유 이름이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "DocType",
+    "context": "",
+    "translation": "DocType",
+    "reason": "DocType은 Frappe 프레임워크 관리 용어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Doctype",
+    "context": "",
+    "translation": "DocType",
+    "reason": "Doctype는 Frappe 프레임워크 관리 용어인 DocType으로 표기를 정규화했습니다."
+  },
+  {
+    "source": "Document Type",
+    "context": "",
+    "translation": "DocType",
+    "reason": "Document Type은 Frappe 프레임워크 관리 용어인 DocType으로 표기를 정규화했습니다."
+  },
+  {
+    "source": "EAN",
+    "context": "",
+    "translation": "EAN",
+    "reason": "EAN은 국제상품번호 바코드 규격의 표준 약어이므로 원문을 그대로 유지했습니다."
+  },
+  {
+    "source": "EAN-13",
+    "context": "",
+    "translation": "EAN-13",
+    "reason": "EAN-13은 국제상품번호 바코드 규격의 고유 명칭이므로 원문을 그대로 유지했습니다."
+  },
+  {
+    "source": "EAN-8",
+    "context": "",
+    "translation": "EAN-8",
+    "reason": "EAN-8은 국제상품번호 바코드 규격의 고유 명칭이므로 원문을 그대로 유지했습니다."
+  },
+  {
+    "source": "ESC",
+    "context": "",
+    "translation": "ESC",
+    "reason": "ESC는 키보드 키의 표준 표기이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Excel",
+    "context": "",
+    "translation": "Excel",
+    "reason": "Excel은 제품명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Executive",
+    "context": "",
+    "translation": "Executive",
+    "reason": "Executive는 PDF 용지 규격명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "FIFO",
+    "context": "",
+    "translation": "FIFO",
+    "reason": "FIFO는 선입선출 평가방법의 표준 약어이므로 그대로 유지했습니다."
+  },
+  {
+    "source": "Facebook",
+    "context": "",
+    "translation": "Facebook",
+    "reason": "서비스 고유 브랜드명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Folio",
+    "context": "",
+    "translation": "Folio",
+    "reason": "Folio는 PDF 용지 규격명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Frappe",
+    "context": "",
+    "translation": "Frappe",
+    "reason": "Frappe는 제품명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Frappe Light",
+    "context": "",
+    "translation": "Frappe Light",
+    "reason": "Frappe Light는 제품 테마명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "GET",
+    "context": "",
+    "translation": "GET",
+    "reason": "HTTP 메서드 이름이므로 원문을 유지함."
+  },
+  {
+    "source": "GMail",
+    "context": "",
+    "translation": "Gmail",
+    "reason": "서비스 고유 브랜드명의 공식 표기인 Gmail로 대소문자를 정규화했습니다."
+  },
+  {
+    "source": "GS1",
+    "context": "",
+    "translation": "GS1",
+    "reason": "GS1은 국제 표준 식별체계의 고유 명칭이므로 원문을 그대로 유지했습니다."
+  },
+  {
+    "source": "GTIN",
+    "context": "",
+    "translation": "GTIN",
+    "reason": "GTIN은 국제거래단위번호의 표준 약어이므로 원문을 그대로 유지했습니다."
+  },
+  {
+    "source": "GTIN-14",
+    "context": "",
+    "translation": "GTIN-14",
+    "reason": "GTIN-14는 국제거래단위번호 규격의 고유 명칭이므로 원문을 그대로 유지했습니다."
+  },
+  {
+    "source": "Geoapify",
+    "context": "",
+    "translation": "Geoapify",
+    "reason": "서비스 고유 브랜드명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "GitHub",
+    "context": "",
+    "translation": "GitHub",
+    "reason": "서비스 고유 브랜드명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Google",
+    "context": "",
+    "translation": "Google",
+    "reason": "서비스 고유 브랜드명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Google Analytics ID",
+    "context": "",
+    "translation": "Google Analytics ID",
+    "reason": "Google Analytics ID는 제품의 설정 필드 고유명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Google Drive",
+    "context": "",
+    "translation": "Google Drive",
+    "reason": "Google Drive는 제품명이므로 원문 표기를 유지했습니다."
+  },
+  {
+    "source": "HEAD",
+    "context": "",
+    "translation": "HEAD",
+    "reason": "HTTP 메서드 이름이므로 원문을 유지함."
+  },
+  {
+    "source": "HH:mm",
+    "context": "",
+    "translation": "HH:mm",
+    "reason": "HH:mm은 시간 형식 패턴이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "HH:mm:ss",
+    "context": "",
+    "translation": "HH:mm:ss",
+    "reason": "HH:mm:ss는 시간 형식 패턴이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "HR-DRI-.YYYY.-",
+    "context": "",
+    "translation": "HR-DRI-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "HR-EMP-",
+    "context": "",
+    "translation": "HR-EMP-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "HTML",
+    "context": "",
+    "translation": "HTML",
+    "reason": "HTML은 표준 기술 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Helvetica",
+    "context": "",
+    "translation": "Helvetica",
+    "reason": "Helvetica는 글꼴 고유명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Helvetica Neue",
+    "context": "",
+    "translation": "Helvetica Neue",
+    "reason": "Helvetica Neue는 글꼴 고유명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "IBAN",
+    "context": "",
+    "translation": "IBAN",
+    "reason": "국제 은행계좌 식별자이므로 원문 약어를 유지했습니다."
+  },
+  {
+    "source": "ID",
+    "context": "",
+    "translation": "ID",
+    "reason": "ID는 시스템 식별자의 표준 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ID",
+    "context": "Label of name column in report",
+    "translation": "ID",
+    "reason": "표준 식별자 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "IRS 1099",
+    "context": "",
+    "translation": "IRS 1099",
+    "reason": "미국 세무 보고서의 고유 명칭이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ISBN",
+    "context": "",
+    "translation": "ISBN",
+    "reason": "ISBN은 국제표준도서번호의 표준 약어이므로 원문을 그대로 유지했습니다."
+  },
+  {
+    "source": "ISBN-10",
+    "context": "",
+    "translation": "ISBN-10",
+    "reason": "ISBN-10은 국제표준도서번호 규격의 고유 명칭이므로 원문을 그대로 유지했습니다."
+  },
+  {
+    "source": "ISBN-13",
+    "context": "",
+    "translation": "ISBN-13",
+    "reason": "ISBN-13은 국제표준도서번호 규격의 고유 명칭이므로 원문을 그대로 유지했습니다."
+  },
+  {
+    "source": "ISS-.YYYY.-",
+    "context": "",
+    "translation": "ISS-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "ISSN",
+    "context": "",
+    "translation": "ISSN",
+    "reason": "ISSN은 국제표준연속간행물번호의 표준 약어이므로 원문을 그대로 유지했습니다."
+  },
+  {
+    "source": "Id",
+    "context": "",
+    "translation": "ID",
+    "reason": "ID는 시스템 식별자를 뜻하는 표준 약어이므로 그대로 유지했습니다."
+  },
+  {
+    "source": "Id",
+    "context": "d",
+    "translation": "ID",
+    "reason": "ID는 시스템 식별자를 뜻하는 표준 약어이므로 그대로 유지했습니다."
+  },
+  {
+    "source": "InnoDB",
+    "context": "",
+    "translation": "InnoDB",
+    "reason": "InnoDB는 데이터베이스 엔진 고유 이름이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Inter",
+    "context": "",
+    "translation": "Inter",
+    "reason": "Inter는 글꼴 고유명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "JAN",
+    "context": "",
+    "translation": "JAN",
+    "reason": "JAN은 일본상품번호 바코드 규격의 표준 약어이므로 원문을 그대로 유지했습니다."
+  },
+  {
+    "source": "JS",
+    "context": "",
+    "translation": "JS",
+    "reason": "JS는 JavaScript의 표준 기술 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "JSON",
+    "context": "",
+    "translation": "JSON",
+    "reason": "JSON은 보호된 데이터 형식 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "JavaScript",
+    "context": "",
+    "translation": "JavaScript",
+    "reason": "JavaScript는 프로그래밍 언어명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Javascript",
+    "context": "",
+    "translation": "JavaScript",
+    "reason": "JavaScript는 프로그래밍 언어명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Jinja",
+    "context": "",
+    "translation": "Jinja",
+    "reason": "Jinja는 템플릿 엔진명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Keycloak",
+    "context": "",
+    "translation": "Keycloak",
+    "reason": "인증 서비스 고유 브랜드명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Kh",
+    "context": "Number system",
+    "translation": "Kh",
+    "reason": "Kh는 인도식 큰 수 단위의 표준 축약이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "LIFO",
+    "context": "",
+    "translation": "LIFO",
+    "reason": "LIFO는 후입선출 평가방법의 표준 약어이므로 그대로 유지했습니다."
+  },
+  {
+    "source": "Ledger",
+    "context": "",
+    "translation": "Ledger",
+    "reason": "Ledger는 PDF 용지 규격명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Legal",
+    "context": "",
+    "translation": "Legal",
+    "reason": "Legal은 PDF 용지 규격명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Letter",
+    "context": "",
+    "translation": "Letter",
+    "reason": "Letter는 PDF 용지 규격명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Lft",
+    "context": "",
+    "translation": "Lft",
+    "reason": "중첩집합 트리의 left 경계값을 뜻하는 Frappe 내부 필드 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-DN-.YYYY.-",
+    "context": "",
+    "translation": "MAT-DN-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-DN-RET-.YYYY.-",
+    "context": "",
+    "translation": "MAT-DN-RET-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-DT-.YYYY.-",
+    "context": "",
+    "translation": "MAT-DT-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-INS-.YYYY.-",
+    "context": "",
+    "translation": "MAT-INS-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-LCV-.YYYY.-",
+    "context": "",
+    "translation": "MAT-LCV-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-MR-.YYYY.-",
+    "context": "",
+    "translation": "MAT-MR-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-MSH-.YYYY.-",
+    "context": "",
+    "translation": "MAT-MSH-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-MVS-.YYYY.-",
+    "context": "",
+    "translation": "MAT-MVS-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-PAC-.YYYY.-",
+    "context": "",
+    "translation": "MAT-PAC-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-PR-RET-.YYYY.-",
+    "context": "",
+    "translation": "MAT-PR-RET-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-PRE-.YYYY.-",
+    "context": "",
+    "translation": "MAT-PRE-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-QA-.YYYY.-",
+    "context": "",
+    "translation": "MAT-QA-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-RECO-.YYYY.-",
+    "context": "",
+    "translation": "MAT-RECO-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-SCR-.YYYY.-",
+    "context": "",
+    "translation": "MAT-SCR-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-SCR-RET-.YYYY.-",
+    "context": "",
+    "translation": "MAT-SCR-RET-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MAT-STE-.YYYY.-",
+    "context": "",
+    "translation": "MAT-STE-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MFG-BLR-.YYYY.-",
+    "context": "",
+    "translation": "MFG-BLR-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MFG-PP-.YYYY.-",
+    "context": "",
+    "translation": "MFG-PP-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MFG-WO-.YYYY.-",
+    "context": "",
+    "translation": "MFG-WO-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MPS",
+    "context": "",
+    "translation": "MPS",
+    "reason": "MPS는 기준생산계획(Master Production Schedule)을 뜻하는 제조 현장의 표준 약어이므로 그대로 유지했습니다."
+  },
+  {
+    "source": "MPS.YY.-.######",
+    "context": "",
+    "translation": "MPS.YY.-.######",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Markdown",
+    "context": "",
+    "translation": "Markdown",
+    "reason": "Markdown은 마크업 언어명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Monospace",
+    "context": "",
+    "translation": "Monospace",
+    "reason": "Monospace는 글꼴 분류명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "MyISAM",
+    "context": "",
+    "translation": "MyISAM",
+    "reason": "MyISAM은 데이터베이스 엔진 고유 이름이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Nomatim",
+    "context": "",
+    "translation": "Nomatim",
+    "reason": "지리 검색 공급자의 원문 옵션 값이므로 그대로 유지했습니다."
+  },
+  {
+    "source": "OAuth",
+    "context": "",
+    "translation": "OAuth",
+    "reason": "표준 권한 부여 기술명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "OPTIONS",
+    "context": "",
+    "translation": "OPTIONS",
+    "reason": "HTTP 메서드 이름이므로 원문을 유지함."
+  },
+  {
+    "source": "Office 365",
+    "context": "",
+    "translation": "Office 365",
+    "reason": "서비스 고유 제품명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "OpenLDAP",
+    "context": "",
+    "translation": "OpenLDAP",
+    "reason": "디렉터리 서비스 고유 제품명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Outlook.com",
+    "context": "",
+    "translation": "Outlook.com",
+    "reason": "서비스 고유 제품명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "PATCH",
+    "context": "",
+    "translation": "PATCH",
+    "reason": "HTTP 메서드 이름이므로 원문을 유지함."
+  },
+  {
+    "source": "PCV",
+    "context": "",
+    "translation": "PCV",
+    "reason": "결산전표(Period Closing Voucher)의 시스템 표준 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "PDF",
+    "context": "",
+    "translation": "PDF",
+    "reason": "PDF는 문서 형식의 표준 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "PID",
+    "context": "",
+    "translation": "PID",
+    "reason": "PID는 프로세스 식별자 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "PIN",
+    "context": "",
+    "translation": "PIN",
+    "reason": "PIN은 데이터 필드 식별자이므로 원문 표기를 유지했습니다."
+  },
+  {
+    "source": "PMO-",
+    "context": "",
+    "translation": "PMO-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "PO-JOB.#####",
+    "context": "",
+    "translation": "PO-JOB.#####",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "POS-CLO-",
+    "context": "",
+    "translation": "POS-CLO-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "POST",
+    "context": "",
+    "translation": "POST",
+    "reason": "HTTP 메서드 이름이므로 원문을 유지함."
+  },
+  {
+    "source": "PRLE-.####",
+    "context": "",
+    "translation": "PRLE-.####",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "PROJ-.####",
+    "context": "",
+    "translation": "PROJ-.####",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "PU-SSP-.YYYY.-",
+    "context": "",
+    "translation": "PU-SSP-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "PUR-ORD-.YYYY.-",
+    "context": "",
+    "translation": "PUR-ORD-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "PUR-RFQ-.YYYY.-",
+    "context": "",
+    "translation": "PUR-RFQ-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "PUR-SQTN-.YYYY.-",
+    "context": "",
+    "translation": "PUR-SQTN-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "PUT",
+    "context": "",
+    "translation": "PUT",
+    "reason": "HTTP 메서드 이름이므로 원문을 유지함."
+  },
+  {
+    "source": "PZN",
+    "context": "",
+    "translation": "PZN",
+    "reason": "PZN은 바코드 규격 식별자이므로 원문 표기를 유지했습니다."
+  },
+  {
+    "source": "Period_from_date",
+    "context": "",
+    "translation": "Period_from_date",
+    "reason": "시스템 내부 필드명으로 노출되는 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Point Of Sale",
+    "context": "",
+    "translation": "POS",
+    "reason": "POS는 판매시점관리(Point Of Sale)의 표준 약어이므로 약어로 유지했습니다."
+  },
+  {
+    "source": "Python",
+    "context": "",
+    "translation": "Python",
+    "reason": "프로그래밍 언어 고유 이름이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Re:",
+    "context": "",
+    "translation": "Re:",
+    "reason": "이메일 회신 제목의 표준 접두사이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Readme",
+    "context": "",
+    "translation": "README",
+    "reason": "Readme는 소프트웨어 문서 파일의 표준 명칭인 README로 표기를 정규화했습니다."
+  },
+  {
+    "source": "Rgt",
+    "context": "",
+    "translation": "Rgt",
+    "reason": "중첩집합 트리의 right 경계값을 뜻하는 Frappe 내부 필드 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Robots.txt",
+    "context": "",
+    "translation": "Robots.txt",
+    "reason": "Robots.txt는 웹 크롤러 제어 파일의 표준 파일명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SABB-.########",
+    "context": "",
+    "translation": "SABB-.########",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SAL-ORD-.YYYY.-",
+    "context": "",
+    "translation": "SAL-ORD-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SAL-QTN-.YYYY.-",
+    "context": "",
+    "translation": "SAL-QTN-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SC-ORD-.YYYY.-",
+    "context": "",
+    "translation": "SC-ORD-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SCI-ORD-.YYYY.-",
+    "context": "",
+    "translation": "SCI-ORD-.YYYY.-",
+    "reason": "번호 부여 규칙 또는 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SER-WRN-.YYYY.-",
+    "context": "",
+    "translation": "SER-WRN-.YYYY.-",
+    "reason": "번호 부여 규칙, 코드 조각 또는 동적 플레이스홀더이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SF.YY.-.######",
+    "context": "",
+    "translation": "SF.YY.-.######",
+    "reason": "번호 부여 규칙, 코드 조각 또는 동적 플레이스홀더이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SMS",
+    "context": "",
+    "translation": "SMS",
+    "reason": "SMS는 표준 통신 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SQL",
+    "context": "",
+    "translation": "SQL",
+    "reason": "표준 데이터베이스 질의 언어 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "STO-ITEM-.YYYY.-",
+    "context": "",
+    "translation": "STO-ITEM-.YYYY.-",
+    "reason": "번호 부여 규칙, 코드 조각 또는 동적 플레이스홀더이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "STO-PICK-.YYYY.-",
+    "context": "",
+    "translation": "STO-PICK-.YYYY.-",
+    "reason": "번호 부여 규칙, 코드 조각 또는 동적 플레이스홀더이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SUCCESS",
+    "context": "",
+    "translation": "SUCCESS",
+    "reason": "이메일 배달 상태의 시스템 옵션 값이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SUCCESS,FAILURE",
+    "context": "",
+    "translation": "SUCCESS,FAILURE",
+    "reason": "이메일 배달 상태의 시스템 옵션 값 조합이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SUCCESS,FAILURE,DELAY",
+    "context": "",
+    "translation": "SUCCESS,FAILURE,DELAY",
+    "reason": "이메일 배달 상태의 시스템 옵션 값 조합이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SUP-.YYYY.-",
+    "context": "",
+    "translation": "SUP-.YYYY.-",
+    "reason": "번호 부여 규칙, 코드 조각 또는 동적 플레이스홀더이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Salesforce",
+    "context": "",
+    "translation": "Salesforce",
+    "reason": "서비스 고유 브랜드명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Security.txt",
+    "context": "",
+    "translation": "security.txt",
+    "reason": "security.txt는 표준 보안 정책 파일명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Sendgrid",
+    "context": "",
+    "translation": "SendGrid",
+    "reason": "이메일 서비스 고유 브랜드명의 공식 표기인 SendGrid로 대소문자를 정규화했습니다."
+  },
+  {
+    "source": "Skype",
+    "context": "",
+    "translation": "Skype",
+    "reason": "Skype는 서비스명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Slack",
+    "context": "",
+    "translation": "Slack",
+    "reason": "협업 서비스 고유 브랜드명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "SparkPost",
+    "context": "",
+    "translation": "SparkPost",
+    "reason": "이메일 서비스 고유 브랜드명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "StartTLS",
+    "context": "",
+    "translation": "StartTLS",
+    "reason": "표준 보안 프로토콜 옵션명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "TS-.YYYY.-",
+    "context": "",
+    "translation": "TS-.YYYY.-",
+    "reason": "번호 부여 규칙, 코드 조각 또는 동적 플레이스홀더이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Tabloid",
+    "context": "",
+    "translation": "Tabloid",
+    "reason": "Tabloid는 PDF 용지 규격명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Test_Folder",
+    "context": "",
+    "translation": "Test_Folder",
+    "reason": "Test_Folder는 테스트용 파일 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "UID",
+    "context": "",
+    "translation": "UID",
+    "reason": "IMAP 메시지 식별자 필드명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "UIDNEXT",
+    "context": "",
+    "translation": "UIDNEXT",
+    "reason": "IMAP 서버 상태 필드명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "UIDVALIDITY",
+    "context": "",
+    "translation": "UIDVALIDITY",
+    "reason": "IMAP 서버 상태 필드명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "UNSEEN",
+    "context": "",
+    "translation": "UNSEEN",
+    "reason": "IMAP 메시지 플래그 값이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "UPC",
+    "context": "",
+    "translation": "UPC",
+    "reason": "UPC는 바코드 규격 식별자이므로 원문 표기를 유지했습니다."
+  },
+  {
+    "source": "UPC-A",
+    "context": "",
+    "translation": "UPC-A",
+    "reason": "UPC-A는 바코드 규격 식별자이므로 원문 표기를 유지했습니다."
+  },
+  {
+    "source": "URL",
+    "context": "",
+    "translation": "URL",
+    "reason": "표준 웹 주소 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "UUID",
+    "context": "",
+    "translation": "UUID",
+    "reason": "UUID는 표준 식별자 형식 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Verdana",
+    "context": "",
+    "translation": "Verdana",
+    "reason": "Verdana는 글꼴 고유명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "XLSX",
+    "context": "",
+    "translation": "XLSX",
+    "reason": "표준 스프레드시트 파일 형식 약어이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Yahoo Mail",
+    "context": "",
+    "translation": "Yahoo Mail",
+    "reason": "이메일 서비스 고유 브랜드명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Yandex.Mail",
+    "context": "",
+    "translation": "Yandex.Mail",
+    "reason": "이메일 서비스 고유 브랜드명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "Youtube ID",
+    "context": "",
+    "translation": "YouTube ID",
+    "reason": "YouTube는 서비스명이고 ID는 표준 식별자 약어이므로 공식 표기로 유지했습니다."
+  },
+  {
+    "source": "after_insert",
+    "context": "",
+    "translation": "after_insert",
+    "reason": "웹훅 문서 이벤트의 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "based_on",
+    "context": "",
+    "translation": "based_on",
+    "reason": "보고서 필드 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "chrome",
+    "context": "",
+    "translation": "Chrome",
+    "reason": "Chrome은 브라우저 제품명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "dd-mm-yyyy",
+    "context": "",
+    "translation": "dd-mm-yyyy",
+    "reason": "dd-mm-yyyy는 날짜 형식 패턴이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "dd.mm.yyyy",
+    "context": "",
+    "translation": "dd.mm.yyyy",
+    "reason": "dd.mm.yyyy는 날짜 형식 패턴이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "dd/mm/yyyy",
+    "context": "",
+    "translation": "dd/mm/yyyy",
+    "reason": "dd/mm/yyyy는 날짜 형식 패턴이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "doc_type",
+    "context": "",
+    "translation": "doc_type",
+    "reason": "런타임 필드 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "emacs",
+    "context": "",
+    "translation": "emacs",
+    "reason": "텍스트 편집기 고유 이름이므로 원문을 유지함."
+  },
+  {
+    "source": "exchangerate.host",
+    "context": "",
+    "translation": "exchangerate.host",
+    "reason": "환율 서비스의 도메인 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "facebook",
+    "context": "",
+    "translation": "Facebook",
+    "reason": "Facebook은 서비스명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "fairlogin",
+    "context": "",
+    "translation": "fairlogin",
+    "reason": "소셜 로그인 공급자 고유 이름이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "frankfurter.dev",
+    "context": "",
+    "translation": "frankfurter.dev",
+    "reason": "환율 서비스의 도메인 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "frankfurter.dev - v2",
+    "context": "",
+    "translation": "frankfurter.dev - v2",
+    "reason": "환율 서비스명과 API 버전 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "heatmap-legend-unit",
+    "context": "",
+    "translation": "heatmap-legend-unit",
+    "reason": "UI 구성 요소 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "jane@example.com",
+    "context": "",
+    "translation": "jane@example.com",
+    "reason": "jane@example.com은 이메일 입력 예시이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "lft",
+    "context": "",
+    "translation": "lft",
+    "reason": "Nested Set 트리의 내부 필드 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "linkedin",
+    "context": "",
+    "translation": "LinkedIn",
+    "reason": "LinkedIn은 서비스명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "mm-dd-yyyy",
+    "context": "",
+    "translation": "mm-dd-yyyy",
+    "reason": "mm-dd-yyyy는 날짜 형식 패턴이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "mm/dd/yyyy",
+    "context": "",
+    "translation": "mm/dd/yyyy",
+    "reason": "mm/dd/yyyy는 날짜 형식 패턴이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "old_parent",
+    "context": "",
+    "translation": "old_parent",
+    "reason": "old_parent는 런타임 필드 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "on_cancel",
+    "context": "",
+    "translation": "on_cancel",
+    "reason": "웹훅 문서 이벤트의 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "on_change",
+    "context": "",
+    "translation": "on_change",
+    "reason": "웹훅 문서 이벤트의 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "on_submit",
+    "context": "",
+    "translation": "on_submit",
+    "reason": "웹훅 문서 이벤트의 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "on_trash",
+    "context": "",
+    "translation": "on_trash",
+    "reason": "웹훅 문서 이벤트의 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "on_update",
+    "context": "",
+    "translation": "on_update",
+    "reason": "웹훅 문서 이벤트의 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "on_update_after_submit",
+    "context": "",
+    "translation": "on_update_after_submit",
+    "reason": "웹훅 문서 이벤트의 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "print-format-builder-beta",
+    "context": "",
+    "translation": "print-format-builder-beta",
+    "reason": "UI 기능 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "quotation_item",
+    "context": "",
+    "translation": "quotation_item",
+    "reason": "DocType 필드 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "rgt",
+    "context": "",
+    "translation": "rgt",
+    "reason": "Nested Set 트리의 내부 필드 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "target_ref_field",
+    "context": "",
+    "translation": "target_ref_field",
+    "reason": "런타임 필드 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "twitter",
+    "context": "",
+    "translation": "Twitter",
+    "reason": "Twitter는 서비스명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "version_table",
+    "context": "",
+    "translation": "version_table",
+    "reason": "version_table은 런타임 HTML 필드 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "vim",
+    "context": "",
+    "translation": "vim",
+    "reason": "텍스트 편집기 고유 이름이므로 원문을 유지함."
+  },
+  {
+    "source": "vscode",
+    "context": "",
+    "translation": "vscode",
+    "reason": "vscode는 코드 편집기 유형 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "wkhtmltopdf",
+    "context": "",
+    "translation": "wkhtmltopdf",
+    "reason": "wkhtmltopdf는 PDF 렌더링 도구명이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "workflow_transition",
+    "context": "",
+    "translation": "workflow_transition",
+    "reason": "웹훅 문서 이벤트의 시스템 식별자이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "yyyy-mm-dd",
+    "context": "",
+    "translation": "yyyy-mm-dd",
+    "reason": "yyyy-mm-dd는 날짜 형식 패턴이므로 원문을 유지했습니다."
+  },
+  {
+    "source": "{0} ${skip_list ? \"\" : type}",
+    "context": "",
+    "translation": "{0} ${skip_list ? \"\" : type}",
+    "reason": "템플릿 리터럴과 조건 표현식이므로 코드 전체를 원문 그대로 유지했습니다."
+  },
+  {
+    "source": "{0} ${type}",
+    "context": "",
+    "translation": "{0} ${type}",
+    "reason": "템플릿 리터럴 표현식이므로 코드 전체를 원문 그대로 유지했습니다."
+  },
+  {
+    "source": "{0} to {1}",
+    "context": "",
+    "translation": "{0}~{1}",
+    "reason": "The tilde is the standard compact Korean notation for an inclusive range."
+  },
+  {
+    "source": "{0} until {1}",
+    "context": "",
+    "translation": "{0}~{1}",
+    "reason": "두 플레이스홀더 사이의 기간 범위를 한국어 물결표 표기로 간결하게 표현했습니다."
+  }
+]

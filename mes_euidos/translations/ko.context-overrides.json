@@ -1,0 +1,440 @@
+[
+  {
+    "source": "<0",
+    "context": "",
+    "translation": "<0",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "Add Tags",
+    "context": "Button in list view actions menu",
+    "translation": "태그 추가",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Assign To",
+    "context": "Button in list view actions menu",
+    "translation": "담당자 지정",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "BCC",
+    "context": "Email Recipients",
+    "translation": "숨은 참조",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "CC",
+    "context": "Email Recipients",
+    "translation": "참조",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Cancel",
+    "context": "Button in list view actions menu",
+    "translation": "취소",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Cancel",
+    "context": "Secondary button in warning dialog",
+    "translation": "취소",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Change",
+    "context": "Coins",
+    "translation": "거스름돈",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Collapse",
+    "context": "",
+    "translation": "접기",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "Confirm",
+    "context": "Confirm gravatar deletion prompt",
+    "translation": "확인",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Confirm",
+    "context": "Title of confirmation dialog",
+    "translation": "확인",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Convert to Group",
+    "context": "Warehouse",
+    "translation": "그룹으로 전환",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Convert to Ledger",
+    "context": "",
+    "translation": "원장으로 전환",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "Create New",
+    "context": "Create a new document from list view",
+    "translation": "새로 생성",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Customize",
+    "context": "Button in list view menu",
+    "translation": "사용자 정의",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Delete",
+    "context": "Button in list view actions menu",
+    "translation": "삭제",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Delete",
+    "context": "Button in web form",
+    "translation": "삭제",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Discard",
+    "context": "Button in web form",
+    "translation": "변경 취소",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Discard",
+    "context": "Discard Email",
+    "translation": "이메일 폐기",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Dismiss",
+    "context": "Stop showing the onboarding widget.",
+    "translation": "숨기기",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Download",
+    "context": "Export report",
+    "translation": "다운로드",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Edit",
+    "context": "Button in list view actions menu",
+    "translation": "편집",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Edit",
+    "context": "Button in web form",
+    "translation": "편집",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Edit",
+    "context": "Edit grid row",
+    "translation": "편집",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Edit DocType",
+    "context": "Button in list view menu",
+    "translation": "DocType 편집",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Error",
+    "context": "Title of error message in web form",
+    "translation": "오류",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Error: {0} is mandatory field",
+    "context": "",
+    "translation": "오류: {0}은(는) 필수 필드입니다",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "Expand",
+    "context": "",
+    "translation": "펼치기",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "Export",
+    "context": "Button in list view actions menu",
+    "translation": "내보내기",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "For the new {0} to take effect, would you like to clear the current {1}?",
+    "context": "",
+    "translation": "새로운 {0}를 적용하려면 현재 {1}를 지우시겠습니까?",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "For the new {0} to take effect, would you like to clear the current {1}?",
+    "context": "Clear payment terms template and/or payment schedule when due date is changed",
+    "translation": "새로운 {0}를 적용하려면 현재 {1}를 지우시겠습니까?",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "From",
+    "context": "Email Sender",
+    "translation": "발신자",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "General Ledger",
+    "context": "Warehouse",
+    "translation": "총계정원장",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "ID",
+    "context": "Label of name column in report",
+    "translation": "ID",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Id",
+    "context": "",
+    "translation": "ID",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "Import",
+    "context": "Button in list view menu",
+    "translation": "가져오기",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Left",
+    "context": "alignment",
+    "translation": "왼쪽",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "List Settings",
+    "context": "Button in list view menu",
+    "translation": "목록 설정",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Message",
+    "context": "Default title of the message dialog",
+    "translation": "메시지",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Mr",
+    "context": "",
+    "translation": "남성 존칭",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "Ms",
+    "context": "",
+    "translation": "여성 존칭",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "Mx",
+    "context": "",
+    "translation": "성별 중립 호칭",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "N/A",
+    "context": "",
+    "translation": "N/A",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "Next",
+    "context": "Go to next slide",
+    "translation": "다음",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "No",
+    "context": "Checkbox is not checked",
+    "translation": "아니요",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "No",
+    "context": "Dismiss confirmation dialog",
+    "translation": "아니요",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "No permission to '{0}' {1}",
+    "context": "{0} = verb, {1} = object",
+    "translation": "{1}에 대한 '{0}' 권한이 없습니다",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Not Set",
+    "context": "",
+    "translation": "설정되지 않음",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "Open",
+    "context": "Access",
+    "translation": "열기",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Pay",
+    "context": "Amount",
+    "translation": "결제",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Please set {0} first.",
+    "context": "",
+    "translation": "먼저 {0}를 설정해 주세요.",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "Please specify a {0} first.",
+    "context": "",
+    "translation": "먼저 {0}를 지정해 주세요.",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "Previous",
+    "context": "Go to previous slide",
+    "translation": "이전",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Print",
+    "context": "Button in list view actions menu",
+    "translation": "인쇄",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Right",
+    "context": "alignment",
+    "translation": "오른쪽",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Role Permissions Manager",
+    "context": "Button in list view menu",
+    "translation": "역할 권한 관리자",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Saving",
+    "context": "",
+    "translation": "저장 중",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "Set",
+    "context": "Field value is set",
+    "translation": "설정됨",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Submit",
+    "context": "Button in list view actions menu",
+    "translation": "확정",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Submit",
+    "context": "Button in web form",
+    "translation": "제출",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Submit",
+    "context": "Primary action in dialog",
+    "translation": "확인",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Submit",
+    "context": "Primary action of prompt dialog",
+    "translation": "확인",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Submit",
+    "context": "Submit password for Email Account",
+    "translation": "확인",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "To",
+    "context": "Email Recipients",
+    "translation": "수신자",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Updating",
+    "context": "",
+    "translation": "업데이트 중",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "User Permissions",
+    "context": "Button in list view menu",
+    "translation": "사용자 권한",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Yes",
+    "context": "Approve confirmation dialog",
+    "translation": "예",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "Yes",
+    "context": "Checkbox is checked",
+    "translation": "예",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "empty",
+    "context": "",
+    "translation": "비어 있는",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  },
+  {
+    "source": "{0} cancelled this document {1}",
+    "context": "Form timeline",
+    "translation": "{0}이(가) 이 문서 {1}을(를) 취소함",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "{0} created this document {1}",
+    "context": "Form timeline",
+    "translation": "{0}이(가) 이 문서 {1}을(를) 생성함",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "{0} submitted this document {1}",
+    "context": "Form timeline",
+    "translation": "{0}이(가) 이 문서 {1}을(를) 확정함",
+    "reason": "Reviewed gettext context retained for context-aware Frappe runtime calls."
+  },
+  {
+    "source": "{}",
+    "context": "",
+    "translation": "{}",
+    "reason": "Reviewed default fallback retained for Frappe runtime and extraction compatibility."
+  }
+]

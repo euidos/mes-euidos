@@ -2,8 +2,9 @@
 
 ## Goal
 
-Ship a Korean translation catalog for the 15,246 unique Frappe and
-`mes_euidos` strings retrieved from the `kyp.jh.internal` site on `dev-jh`.
+Ship a Korean translation catalog for the 15,256 unique Frappe and
+`mes_euidos` source strings (15,266 exact source/context pairs) extracted from
+the `kyp.jh.internal` site on `dev-jh`.
 The catalog must load automatically with the app, use terminology familiar to
 Korean ERP/MES operators, and preserve meaning in each UI and business
 context.
@@ -41,6 +42,17 @@ domain groups: accounting, selling, buying, stock, manufacturing, quality,
 HR, and system administration.
 
 ## Runtime format
+
+`mes_euidos/translations/ko.source.jsonl` records the exact, unambiguous
+source/context inventory and its app/location provenance. Bench's
+`get-untranslated` text format is used only as a final runtime check because
+its pipe escaping cannot distinguish some combinations of literal and actual
+newlines.
+
+`mes_euidos/translations/ko.context-overrides.json` explicitly records every
+reviewed default fallback or gettext context retained outside that exact
+source extraction. Tests require the catalog key set to equal the source
+inventory plus this approved overlay, preventing silent context typos.
 
 `mes_euidos/translations/ko.csv` is the complete runtime overlay. Frappe v16
 loads this file directly from installed apps, so it requires neither a
