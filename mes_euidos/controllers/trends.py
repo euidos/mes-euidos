@@ -173,8 +173,11 @@ def get_data(filters, conditions):
 				des = ["" for q in range(len(conditions["columns"]))]
 
 				# get data for group_by filter
+				# pg-port: SUMs with no GROUP BY — every bare column must be
+				# aggregated; currency and sel_col are constant in this row set
+				# (company and sel_col are pinned in the WHERE), so MAX is a no-op
 				row1 = frappe.db.sql(
-					""" select t4.default_currency AS currency , {} , {} from `tab{}` t1, `tab{} Item` t2 {}
+					""" select MAX(t4.default_currency) AS currency , MAX({}) , {} from `tab{}` t1, `tab{} Item` t2 {}
 							where t2.parent = t1.name and t1.company = {} and {} between {} and {}
 							and t1.docstatus = 1 and {} = {} and {} = {} {} {}
 						""".format(
@@ -365,7 +368,11 @@ def based_wise_columns_query(based_on, trans):
 			{"label": _("Item"), "fieldtype": "Link", "options": "Item", "width": 120, "fieldname": "item"},
 			{"label": _("Item Name"), "fieldtype": "Data", "width": 120, "fieldname": "item_name"},
 		]
-		based_on_details["based_on_select"] = "t2.item_code, t2.item_name,"
+		# pg-port: every based_on_select column outside based_on_group_by is
+		# MAX-wrapped — PG rejects bare columns next to the period SUMs; the
+		# wrapped columns are functionally dependent on the group key (or on
+		# company, pinned in the WHERE), so the row set matches MariaDB's
+		based_on_details["based_on_select"] = "t2.item_code, MAX(t2.item_name) as item_name,"
 		based_on_details["based_on_group_by"] = "t2.item_code"
 		based_on_details["addl_tables"] = ""
 
@@ -402,7 +409,9 @@ def based_wise_columns_query(based_on, trans):
 					"fieldname": "territory",
 				},
 			]
-			based_on_details["based_on_select"] = "t1.party_name, t1.customer_name, t1.territory,"
+			based_on_details["based_on_select"] = (
+			"t1.party_name, MAX(t1.customer_name) as customer_name, MAX(t1.territory) as territory,"
+		)
 		else:
 			based_on_details["based_on_cols"] = [
 				{
@@ -426,7 +435,9 @@ def based_wise_columns_query(based_on, trans):
 					"fieldname": "territory",
 				},
 			]
-			based_on_details["based_on_select"] = "t1.customer, t1.customer_name, t1.territory,"
+			based_on_details["based_on_select"] = (
+			"t1.customer, MAX(t1.customer_name) as customer_name, MAX(t1.territory) as territory,"
+		)
 		based_on_details["based_on_group_by"] = "t1.party_name" if trans == "Quotation" else "t1.customer"
 		based_on_details["addl_tables"] = ""
 
@@ -461,7 +472,9 @@ def based_wise_columns_query(based_on, trans):
 				"fieldname": "supplier_group",
 			},
 		]
-		based_on_details["based_on_select"] = "t1.supplier, t1.supplier_name, t3.supplier_group,"
+		based_on_details["based_on_select"] = (
+			"t1.supplier, MAX(t1.supplier_name) as supplier_name, MAX(t3.supplier_group) as supplier_group,"
+		)
 		based_on_details["based_on_group_by"] = "t1.supplier"
 		based_on_details["addl_tables"] = ",`tabSupplier` t3"
 		based_on_details["addl_tables_relational_cond"] = " and t1.supplier = t3.name"
@@ -525,7 +538,7 @@ def based_wise_columns_query(based_on, trans):
 		else:
 			frappe.throw(_("Project-wise data is not available for Quotation"))
 
-	based_on_details["based_on_select"] += "t4.default_currency as currency,"
+	based_on_details["based_on_select"] += "MAX(t4.default_currency) as currency,"
 	based_on_details["based_on_cols"].append(
 		{
 			"label": _("Currency"),
