@@ -2,9 +2,11 @@
 
 ## Goal
 
-Ship a Korean translation catalog for the 15,256 unique Frappe and
-`mes_euidos` source strings (15,266 exact source/context pairs) extracted from
-the `kyp.jh.internal` site on `dev-jh`.
+Ship a Korean translation catalog for every translatable Frappe and
+`mes_euidos` source in the checked-out revisions, including strings that
+already have a Korean translation. Combine static gettext catalogs and source
+extraction with the dynamic messages exposed by `kyp.jh.internal` on
+`dev-jh`; no single extractor is authoritative on its own.
 The catalog must load automatically with the app, use terminology familiar to
 Korean ERP/MES operators, and preserve meaning in each UI and business
 context.
@@ -41,13 +43,39 @@ metadata, field types, and existing translations. Translate and review in
 domain groups: accounting, selling, buying, stock, manufacturing, quality,
 HR, and system administration.
 
+Existing Korean is subject to the same review as untranslated English.
+`bench get-untranslated` is only a negative check: a truthy but inappropriate
+translation such as `Appointment → 약속` is not evidence of quality.
+
+## Authoritative source union
+
+Build the reviewed inventory from the union of:
+
+1. Frappe's complete static POT/PO and source extraction;
+2. `mes_euidos`' complete static POT/PO and source extraction, including
+   Workspace, DocType name, field, option, report, print, web, and bundled
+   JavaScript messages;
+3. site-backed DocType, Page, Report, Workflow, Custom Field, Navbar, and
+   server-message extraction from `kyp.jh.internal`; and
+4. explicit context variants and runtime fallbacks retained by the reviewed
+   catalog.
+
+Record source app, locations, gettext context, and extraction methods for
+every key. Acronym-bearing module names such as `CRM` must not be lost through
+case-changing helpers such as `unscrub`.
+
+Audit to a fixed point: extract the union, translate and review it, compile
+and load it through Frappe, re-extract, then repeat until no new key appears
+and every source/context key is either translated or explicitly classified.
+
 ## Runtime format
 
 `mes_euidos/translations/ko.source.jsonl` records the exact, unambiguous
-source/context inventory and its app/location provenance. Bench's
+source/context union and its app/location/extraction provenance. Bench's
 `get-untranslated` text format is used only as a final runtime check because
-its pipe escaping cannot distinguish some combinations of literal and actual
-newlines.
+it omits already translated strings, depends on the current site database,
+and its pipe escaping cannot distinguish some combinations of literal and
+actual newlines.
 
 `mes_euidos/translations/ko.context-overrides.json` explicitly records every
 reviewed default fallback or gettext context retained outside that exact
@@ -66,8 +94,12 @@ overlay only. Automated checks enforce equality wherever CSV and PO overlap.
 
 ## Quality gates
 
-- Every source item is represented, except explicitly classified
-  non-linguistic input.
+- Every source/context key in the static and dynamic union is represented,
+  except explicitly classified non-linguistic input.
+- The full extraction reaches a fixed point: a second extraction after
+  packaging introduces zero new keys.
+- Existing Korean translations are checked against the same glossary,
+  context, and style rules as newly translated strings.
 - CSV is valid UTF-8 and every row has two or three columns.
 - Source/context keys are unique and semantic-key collisions are reviewed.
 - Python, JavaScript, and named placeholders have identical multisets in the
@@ -82,6 +114,9 @@ overlay only. Automated checks enforce equality wherever CSV and PO overlap.
 - The Frappe v16 loader returns the expected Korean values from the packaged
   CSV/PO combination.
 - A fresh `bench get-untranslated ko` run reports only reviewed exclusions.
+- Named regression examples including `Appointment`, `Total Warehouses`,
+  `Permission Manager`, CRM Settings labels, and administrator user/login
+  labels resolve to reviewed Korean at runtime.
 - Representative accounting, buying, stock, manufacturing, and quality
   screens and messages are checked in a real browser on `dev-jh`.
 
