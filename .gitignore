@@ -6,8 +6,8 @@ latest_updates.json
 .wnf-lang-status
 *.egg-info
 dist/
-erpnext/public/dist
-erpnext/docs/current
+mes_euidos/public/dist
+mes_euidos/docs/current
 *.swp
 *.swo
 __pycache__
@@ -21,7 +21,7 @@ node_modules/
 .aider*
 
 # Banking SPA
-erpnext/public/banking
-erpnext/www/banking.html
+mes_euidos/public/banking
+mes_euidos/www/banking.html
 # derived graphs are never committed — built on demand (euidos-graph)
 graphify-out/
