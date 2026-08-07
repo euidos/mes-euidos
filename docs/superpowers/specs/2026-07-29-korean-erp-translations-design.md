@@ -126,6 +126,6 @@ checks enforce equality wherever CSV and PO overlap.
 ## Delivery
 
 Commit the translation catalog, glossary/context records, and focused
-validation tooling to `pg-port/version-16`. Push the verified commit to the
+validation tooling to `main` (branch renamed from `pg-port/version-16`, 2026-08-07). Push the verified commit to the
 existing upstream branch. Whiteboard-card and Atlas-plan stages are omitted
 at the founder's explicit request.

@@ -1,6 +1,6 @@
 # ERPNext on PostgreSQL (euidos pg-port)
 
-This fork (`euidos/mes_euidos-pg`, branch `pg-port/version-16`) runs ERPNext on
+This fork (`euidos/mes-euidos`, branch `main` — renamed from `pg-port/version-16` on 2026-08-07) runs ERPNext on
 PostgreSQL 17. Upstream ERPNext supports MariaDB only; the frappe framework's
 postgres support is official-but-experimental. Everything here keeps the
 MariaDB path byte-for-byte identical unless a comment marked `pg-port:` says
@@ -119,7 +119,7 @@ list views) and the test suite expect.
 
 ## Branch policy
 
-These repos carry **only** `pg-port/version-16` — upstream ERPNext's ~555
+These repos carry **only one work branch** (`main` here; `pg-port/version-16` on erpnext-pg) — upstream ERPNext's ~555
 development branches are deliberately not kept (they were pruned after the
 fork; every one of them still lives in `frappe/erpnext`). Upstream's tags are
 kept, so the base version (`v16.29.0`) stays identifiable.
@@ -131,7 +131,7 @@ Upstream is not a branch in this repo, so add it as a remote once:
 ```sh
 git remote add upstream https://github.com/frappe/erpnext.git
 git fetch upstream version-16
-git rebase upstream/version-16 pg-port/version-16
+git rebase upstream/version-16 main
 ```
 
 Conflicts should only appear where upstream touched a `pg-port:`-tagged line.

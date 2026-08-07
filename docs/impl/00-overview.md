@@ -8,7 +8,7 @@
 
 ```
 Frappe 사이트
-├ erpnext          이 포크 (pg-port/version-16). 수정하지 않음
+├ erpnext          이 포크 (main). 수정하지 않음
 └ mes_euidos (신규 앱) — 슬라이스 구조
     ├ lot/                엔진 슬라이스: LOT 발번·분기
     │   └ issue_lot/          get_or_create_lot + 테스트
