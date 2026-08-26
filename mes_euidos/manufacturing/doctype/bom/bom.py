@@ -11,7 +11,7 @@ from frappe import _, bold
 from frappe.core.doctype.version.version import get_diff
 from frappe.model.mapper import get_mapped_doc
 from frappe.query_builder import Field
-from frappe.query_builder.functions import Count, IfNull, Sum
+from frappe.query_builder.functions import Count, IfNull, NullIf, Sum
 from frappe.utils import cint, cstr, flt, get_link_to_form, parse_json, today
 from frappe.website.website_generator import WebsiteGenerator
 
@@ -1334,7 +1334,10 @@ def get_valuation_rate(data):
 		.select(
 			Case()
 			.when(
-				Count(bin_table.name) > 0, IfNull(Sum(bin_table.stock_value) / Sum(bin_table.actual_qty), 0.0)
+				Count(bin_table.name) > 0,
+				# NullIf: 순수량 0 인 품목에서 MariaDB 는 0 나눗셈이 NULL 이지만
+				# Postgres 는 division by zero 로 죽는다 — NULL 로 맞춰 IfNull 이 받게 한다
+				IfNull(Sum(bin_table.stock_value) / NullIf(Sum(bin_table.actual_qty), 0), 0.0),
 			)
 			.else_(None)
 			.as_("valuation_rate")
