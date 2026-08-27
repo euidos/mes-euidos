@@ -3175,6 +3175,11 @@ def get_available_batches(kwargs):
 		query = query.orderby(batch_table.creation, order=frappe.qb.desc)
 	elif kwargs.based_on == "Expiry":
 		query = query.orderby(batch_table.expiry_date)
+	elif kwargs.based_on == "Batch ID":
+		# LOT 번호가 곧 입고 순서인 현장을 위한 기준 (autoname: field:batch_id).
+		# creation 은 "LOT 문서를 만든 시각" 이라 과거 재고를 나중에 LOT 으로 등록하면
+		# 실제 입고 순서와 어긋난다 — 번호 규칙이 날짜인 사이트는 이 기준이 정확하다.
+		query = query.orderby(batch_table.name)
 	else:
 		query = query.orderby(batch_table.creation)
 
@@ -3520,6 +3525,11 @@ def get_stock_ledgers_batches(kwargs):
 		query = query.orderby(batch_table.creation, order=frappe.qb.desc)
 	elif kwargs.based_on == "Expiry":
 		query = query.orderby(batch_table.expiry_date)
+	elif kwargs.based_on == "Batch ID":
+		# LOT 번호가 곧 입고 순서인 현장을 위한 기준 (autoname: field:batch_id).
+		# creation 은 "LOT 문서를 만든 시각" 이라 과거 재고를 나중에 LOT 으로 등록하면
+		# 실제 입고 순서와 어긋난다 — 번호 규칙이 날짜인 사이트는 이 기준이 정확하다.
+		query = query.orderby(batch_table.name)
 	else:
 		query = query.orderby(batch_table.creation)
 

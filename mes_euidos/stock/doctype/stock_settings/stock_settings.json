@@ -365,7 +365,7 @@
    "fieldtype": "Select",
    "label": "Pick Serial / Batch Based On",
    "mandatory_depends_on": "auto_create_serial_and_batch_bundle_for_outward",
-   "options": "FIFO\nLIFO\nExpiry"
+   "options": "FIFO\nLIFO\nExpiry\nBatch ID"
   },
   {
    "default": "1",
