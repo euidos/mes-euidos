@@ -1,6 +1,12 @@
 {
  "description": "",
- "layout": {},
+ "layout": {
+  "spec-design-roadmap": {
+   "w": 520,
+   "h": 380,
+   "collapsed": true
+  }
+ },
  "created": "2026-07-27T01:44:21+00:00",
- "updated": "2026-07-28T09:20:50+00:00"
+ "updated": "2026-08-27T05:57:40+00:00"
 }
