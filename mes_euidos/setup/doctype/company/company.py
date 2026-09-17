@@ -899,13 +899,23 @@ def update_company_current_month_sales(company):
 
 def update_company_monthly_sales(company):
 	"""Cache past year monthly sales of every company based on sales invoices"""
-	from frappe.utils.goal import get_monthly_results
+	# pg-port: frappe.utils.goal.get_monthly_results builds `Function(aggregation, goal_field)`,
+	# which renders the FIELD NAME as a string literal — `sum('base_grand_total')`. MariaDB coerces
+	# that literal to 0 and silently caches zeros; PG rejects it outright ("function sum(unknown) is
+	# not unique", 2026-09-17: this daily job had been failing every night). Aggregate the column
+	# here instead — same {"MM-YYYY": total} shape, and correct on both engines.
+	from frappe.query_builder.functions import DateFormat, Sum
 
-	filter_dict = {"company": company, "status": ["!=", "Draft"], "docstatus": 1}
-	month_to_value_dict = get_monthly_results(
-		"Sales Invoice", "base_grand_total", "posting_date", filter_dict, "sum"
-	)
+	si = frappe.qb.DocType("Sales Invoice")
+	month = DateFormat(si.posting_date, "MM-YYYY" if frappe.db.db_type == "postgres" else "%m-%Y")
+	rows = (
+		frappe.qb.from_(si)
+		.select(month.as_("month_year"), Sum(si.base_grand_total))
+		.where((si.docstatus == 1) & (si.company == company) & (si.status != "Draft"))
+		.groupby(month)
+	).run()
 
+	month_to_value_dict = dict(rows)
 	frappe.db.set_value("Company", company, "sales_monthly_history", json.dumps(month_to_value_dict))
 
 

@@ -1057,9 +1057,15 @@ def has_gl_entries(doctype, docname, target_account):
 
 
 def update_maintenance_status():
-	assets = frappe.get_all(
-		"Asset", filters={"docstatus": 1, "maintenance_required": 1, "disposal_date": ("is", "not set")}
-	)
+	# pg-port: frappe 의 `is not set` 은 NULL 검사에 `= ''` 를 덧붙이는데, 날짜 칸에 빈 문자열을
+	# 비교하면 PG 가 거부한다(MariaDB 는 캐스팅해 준다). 날짜의 「없음」은 NULL 뿐이라 NULL 검사로
+	# 족하다 (2026-09-17 운영 실측: 이 일일 작업이 매일 InvalidDatetimeFormat 으로 실패).
+	asset = frappe.qb.DocType("Asset")
+	assets = (
+		frappe.qb.from_(asset)
+		.select(asset.name)
+		.where((asset.docstatus == 1) & (asset.maintenance_required == 1) & asset.disposal_date.isnull())
+	).run(as_dict=True)
 
 	for asset in assets:
 		asset = frappe.get_doc("Asset", asset.name)

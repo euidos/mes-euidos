@@ -53,6 +53,18 @@ CREATE OR REPLACE FUNCTION date_sub(timestamp, interval)
 RETURNS timestamp LANGUAGE sql IMMUTABLE PARALLEL SAFE
 AS 'SELECT $1 - $2';
 
+-- date 입력 오버로드. curdate() 는 date 를 돌려주는데 timestamp·timestamptz 두 후보가
+-- 똑같이 가까워 PG 가 함수를 고르지 못한다("could not choose a best candidate function",
+-- 2026-09-17 운영 실측: company.cache_companies_monthly_sales_history 가 매일 실패).
+-- 정확히 맞는 서명이 있으면 캐스팅 경합이 없어진다.
+CREATE OR REPLACE FUNCTION date_add(date, interval)
+RETURNS timestamp LANGUAGE sql IMMUTABLE PARALLEL SAFE
+AS 'SELECT $1::timestamp + $2';
+
+CREATE OR REPLACE FUNCTION date_sub(date, interval)
+RETURNS timestamp LANGUAGE sql IMMUTABLE PARALLEL SAFE
+AS 'SELECT $1::timestamp - $2';
+
 -- TO_DAYS(d): days since year 0 (MySQL day-number epoch; the +366 aligns
 -- PG's 0001-01-01 origin with MySQL's imaginary year 0).
 CREATE OR REPLACE FUNCTION to_days(timestamp)
